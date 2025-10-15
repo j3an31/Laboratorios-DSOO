@@ -52,7 +52,7 @@ La coordinación entre diseño y desarrollo es clave para mantener la calidad de
 
 A continuación se muestra el diagrama UML que representa las clases principales del sistema y sus relaciones:
 
-![Diagrama UML - Sistema de Citas Médicas](197d1524-25ec-48f2-9592-1e85f2a98d3d.png)
+![Diagrama UML](diagramaUML.png)
 
 **Descripción general del diseño:**
 - `GestorCitas` actúa como clase principal de control, gestionando doctores, pacientes y citas.  
