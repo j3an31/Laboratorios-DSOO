@@ -50,10 +50,14 @@ public class Cita {
     public void setCodigoCita(String codigoCita) {this.codigoCita = codigoCita;}
     public void setCodigoDoctor(String codigoDoctor) {this.codigoDoctor = codigoDoctor;}
     public void setCodigoPaciente(String codigoPaciente) {this.codigoPaciente = codigoPaciente;}
-    public void setEstado(String estado) {this.estado = estado;}   
     public void setFecha(LocalDate fecha) {this.fecha = fecha;}
     public void setHora(LocalTime hora) {this.hora = hora;}
     
+    // Modifica el estado de la cita segun los criterios vistos
+    public void setEstado(String estado) {
+        this.estado = convertirEstado(estado);
+    }   
+
     // ToString
     public String toString() {
         return "\nCITA: " + codigoCita +
