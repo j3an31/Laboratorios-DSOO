@@ -125,4 +125,59 @@ class GestionCitas {
         
         gestor.cambiarEstadoCita(codigoCita, nuevoEstado);
     }
+
+    // Reporte 1: Listar citas por el código de un doctor
+    public void listarCitasPorDoctor(String codigoDoctor) {
+        System.out.println("\n--- Citas del Doctor " + codigoDoctor + " ---");
+        boolean encontradas = false;
+        for (Cita cita : listaCitas) {
+            if (cita.getCodigoDoctor().equals(codigoDoctor)) {
+                System.out.println(cita.toString());
+                encontradas = true;
+            }
+        }
+        if (!encontradas) {
+            System.out.println("No se encontraron citas para este doctor.");
+        }
+    }
+
+    // Reporte 2: Listar citas por el código de un paciente
+    public void listarCitasPorPaciente(String codigoPaciente) {
+        System.out.println("\n--- Citas del Paciente " + codigoPaciente + " ---");
+        boolean encontradas = false;
+        for (Cita cita : listaCitas) {
+            if (cita.getCodigoPaciente().equals(codigoPaciente)) {
+                System.out.println(cita.toString());
+                encontradas = true;
+            }
+        }
+        if (!encontradas) {
+            System.out.println("No se encontraron citas para este paciente.");
+        }
+    }
+
+    // Reporte 3: Mostrar un resumen de los estados de las citas
+    public void mostrarReporteDeEstados() {
+        int atendidas = 0;
+        int canceladas = 0;
+        int pendientes = 0;
+        for (Cita cita : listaCitas) {
+            switch (cita.getEstado()) {
+                case "ATENDIDA":
+                    atendidas++;
+                    break;
+                case "CANCELADA":
+                    canceladas++;
+                    break;
+                case "PENDIENTE":
+                    pendientes++;
+                    break;
+            }
+        }
+        System.out.println("\n--- Reporte de Estados de Citas ---");
+        System.out.println("Total de citas atendidas: " + atendidas);
+        System.out.println("Total de citas canceladas: " + canceladas);
+        System.out.println("Total de citas pendientes: " + pendientes);
+        System.out.println("-----------------------------------");
+    }
 }
