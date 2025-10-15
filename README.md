@@ -1,9 +1,5 @@
 # 🏥 Laboratorio — Sistema de Citas Médicas  
 **Resolviendo el Cuestionario**
-
-Este documento presenta el análisis, diseño y reflexión correspondiente al **Sistema de Citas Médicas**, desarrollado en el marco del curso **Desarrollo de Sistemas Orientados a Objetos (DSOO)**.  
-Se incluyen las respuestas al cuestionario, junto con el **diagrama UML** del sistema implementado.
-
 ---
 
 ## 📘 1. Cuestionario
@@ -69,16 +65,18 @@ A pesar de los ajustes necesarios durante la codificación, el sistema final es 
 
 ---
 
-## ✍️ Autor
+## ✍️ Autores
 
+**Gian Franco Apaza Quispe**  
 **Josué Enrique Camero Elguera**  
-Curso: *Desarrollo de Sistemas Orientados a Objetos (DSOO)*  
-Universidad Nacional de San Agustín de Arequipa – Escuela Profesional de Ingeniería de Sistemas  
-Año académico: 2025
+**Marco Antonio Salas Zegarra**  
+**Johan Jeremy Yucra Ticona**  
 
 ---
 
-## 📄 Licencia
+## Docente
+**Saire Peralta Edwar Abril**
 
-Este proyecto se distribuye con fines educativos.  
-Todos los derechos reservados © 2025.
+Curso: *Desarrollo de Sistemas Orientados a Objetos (DSOO)*  
+Universidad Nacional de San Agustín de Arequipa – Escuela Profesional de Ingeniería de Sistemas  
+Año académico: 2025
